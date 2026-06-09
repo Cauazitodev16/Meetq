@@ -5,15 +5,6 @@
     --button: #5223af;
 }
 
-body.light {
-    --bg: #ffffff;
-    --text: #111111;
-    --subtext: #444444;
-    --button: #6c2bd9;
-}
-body.light.logo {
-    filter: invert(1);
-}
 body{
     margin:0;
     min-height:100vh;
@@ -60,6 +51,24 @@ body{
     pointer-events: none;
 }
 
+.logo-fundo-direito-inferior{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 350px;
+    
+    pointer-events: none;
+}
+
+.logo-fundo-esquerdo-inferior{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 350px;
+    
+    pointer-events: none;
+}
+
 
 h1{
     font-size:3rem;
@@ -82,26 +91,6 @@ button{
     font-weight:bold;
 }
 
-#themeBtn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-
-    padding: 10px 16px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-
-    background: var(--button);
-    color: white;
-    font-weight: bold;
-
-    transition: all 0.3s ease;
-}
-
-#themeBtn:hover {
-    transform: scale(1.05);
-}
 
 .login-cadastro-container{
     display:Inside;
